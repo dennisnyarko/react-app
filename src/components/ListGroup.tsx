@@ -14,7 +14,7 @@ function ListGroup() {
       <ul className="list-group">
         {items.map((item) => (
           <li
-            className="list-group-item"
+            className="list-group-item active"
             key={item}
             onClick={handleClick}
           >
