@@ -2,7 +2,7 @@ import Alert from './components/Alert';
 
 function App() {
   return (
-    <div>
+    <div className="alert alert-primary">
       <Alert />
     </div>
   );
