@@ -1,8 +1,12 @@
 import React from 'react'
 
-const Button = () => {
+interface Props {
+    children: string
+}
+
+const Button = ({ children }: Props) => {
   return (
-    <button className='btn btn-primary'>Button</button>
+    <button className='btn btn-primary'>{children}</button>
   )
 }
 
