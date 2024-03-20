@@ -1,12 +1,13 @@
 import React from 'react'
 
 interface Props {
-    children: string
+    children: string;
+    onClick: () => void;
 }
 
-const Button = ({ children }: Props) => {
+const Button = ({ children, onClick }: Props) => {
   return (
-    <button className='btn btn-primary'>{children}</button>
+    <button className='btn btn-primary' onClick={onClick}>{children}</button>
   )
 }
 
